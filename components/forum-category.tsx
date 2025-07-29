@@ -13,7 +13,7 @@ interface ForumCategoryProps {
 export function ForumCategory({ id, title, description, topicCount, postCount, lastActive }: ForumCategoryProps) {
   return (
     <Link href={`/category/${id}`}>
-      <div className="flex flex-col md:flex-row gap-4 p-4 rounded-lg border hover:bg-muted/50 transition-colors">
+      <div className="flex flex-col md:flex-row gap-4 p-4 my-2 rounded-lg border hover:bg-muted/50 transition-colors">
         <div className="flex-1">
           <h3 className="font-semibold text-lg">{title}</h3>
           <p className="text-muted-foreground text-sm">{description}</p>
